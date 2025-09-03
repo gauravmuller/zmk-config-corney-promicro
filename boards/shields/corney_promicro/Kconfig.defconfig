@@ -8,15 +8,15 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if ZMK_BACKLIGHT
+if ZMK_DISPLAY
 
-config PWM
+config I2C
     default y
 
-config LED_PWM
+config SSD1306
     default y
 
-endif # ZMK_BACKLIGHT
+endif # ZMK_DISPLAY
 
 if SHIELD_CORNEY_PROMICRO_LEFT || SHIELD_CORNEY_PROMICRO_RIGHT
 
