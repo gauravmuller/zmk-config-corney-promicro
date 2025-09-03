@@ -54,6 +54,4 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
         com-sequential;
         inversion-on;
         prechargep = <0x22>;
-        # i2c-sda-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
-        # i2c-scl-gpios = <&pro_micro 3 GPIO_ACTIVE_HIGH>;
     };
