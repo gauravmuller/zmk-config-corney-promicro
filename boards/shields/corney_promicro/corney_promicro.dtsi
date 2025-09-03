@@ -33,18 +33,19 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
             , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 3 from the ergogen file
             ;
     };
+
+    ws2812_led_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812";
+        chain-length = <21>;
+        data-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
+    };
+
+    ssd1306_oled: ssd1306@0 {
+        compatible = "solomon,ssd1306";
+        width = <128>;
+        height = <32>;
+        i2c-sda-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
+        i2c-scl-gpios = <&pro_micro 3 GPIO_ACTIVE_HIGH>;
+    };
 };
 
-ws2812_led_strip: ws2812@0 {
-    compatible = "worldsemi,ws2812";
-    chain-length = <21>;
-    data-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
-};
-
-ssd1306_oled: ssd1306@0 {
-    compatible = "solomon,ssd1306";
-    width = <128>;
-    height = <32>;
-    i2c-sda-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
-    i2c-scl-gpios = <&pro_micro 3 GPIO_ACTIVE_HIGH>;
-};
