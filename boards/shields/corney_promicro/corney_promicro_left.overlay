@@ -1,5 +1,4 @@
-#include "corney_promicro.dtsi" // Notice that the main dtsi files are included in the overlay.
-
+#include "corney_promicro.dtsi" 
 #include <dt-bindings/led/led.h>
 
 &pinctrl {
