@@ -2,7 +2,7 @@
 #include <layouts/corney_promicro/6column.dtsi>
 
 &corney_promicro_6col_layout {
-    kscan = <&kscan0>
+    kscan = <&kscan0>;
     transform = <&default_transform>;
 };
 
