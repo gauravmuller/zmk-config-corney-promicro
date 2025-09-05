@@ -13,14 +13,4 @@ if SHIELD_CORNEY_PROMICRO_LEFT || SHIELD_CORNEY_PROMICRO_RIGHT
     config ZMK_SPLIT
         default y
 
-    if ZMK_DISPLAY
-
-        config I2C
-            default y
-
-        config SSD1306
-            default n
-
-    endif # ZMK_DISPLAY
-
 endif
