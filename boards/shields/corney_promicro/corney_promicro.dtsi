@@ -1,15 +1,12 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <dts/layouts/corney_promicro/6column.dtsi>
 
-&corney_promicro_6col_layout {
-    transform = <&default_transform>;
-};
+
 
 / {
     chosen {
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &corney_promicro_6col_layout;
+        zmk,matrix_transform = &default_transform;
     };
 
     default_transform: keymap_transform_0 {
