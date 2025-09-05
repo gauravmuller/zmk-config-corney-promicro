@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <layouts/corney_promicro/6column.dtsi>
+#include <dts/layouts/corney_promicro/6column.dtsi>
 
 &corney_promicro_6col_layout {
     transform = <&default_transform>;
