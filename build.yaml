@@ -27,3 +27,5 @@ include:
   - board: nice_nano_v2
     shield: corney_promicro_right
     artifact-name: corney_promicro_right_with_studio
+  - board: seeeduino_xiao_ble
+    shield: corney_promicro_dongle prospector_adapter
